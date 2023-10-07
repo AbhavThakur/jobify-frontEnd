@@ -2,6 +2,11 @@ import { Link } from 'react-router-dom';
 import Wrapper from '../assets/wrappers/RegisterAndLoginPage';
 import { FormRow, Logo } from '../components';
 
+/**
+ * Renders the login form component.
+ *
+ * @return {JSX.Element} The login form component.
+ */
 function Login() {
   return (
     <Wrapper>
