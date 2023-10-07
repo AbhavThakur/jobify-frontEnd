@@ -1,29 +1,37 @@
-import styled from 'styled-components';
-
+import { Link } from 'react-router-dom';
+import Main from '../assets/images/main.svg';
+import Wrapper from '../assets/wrappers/LandingPage';
+import { Logo } from '../components';
 function Landing() {
   return (
     <Wrapper>
-      <h1>Landing</h1>
-      <div className="content">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam nisi
-        consectetur dolores voluptatibus sunt qui. Dolor explicabo iusto
-        excepturi iure atque consequuntur voluptatibus nisi sapiente, quibusdam
-        repudiandae veniam soluta maiores!
+      <nav>
+        <Logo />
+      </nav>
+      <div className="container page">
+        <div className="info">
+          <h1>
+            Job <span>Tracking</span> App
+          </h1>
+          <p>
+            I`m baby wayfarers hoodie next level taiyaki brooklyn cliche blue
+            bottle single-origin coffee chia. Aesthetic post-ironic venmo,
+            quinoa lo-fi tote bag adaptogen everyday carry meggings +1 brunch
+            narwhal.
+          </p>
+          <Link to="/register" className="btn register-link">
+            {' '}
+            Register
+          </Link>
+          <Link to="/login" className="btn">
+            Login / Demo user
+          </Link>
+        </div>
+
+        <img src={Main} alt="Main" className="main-img img" />
       </div>
     </Wrapper>
   );
 }
-
-const Wrapper = styled.div`
-  background-color: aliceblue;
-  background: red;
-  h1 {
-    color: white;
-  }
-  .content {
-    color: white;
-    background: green;
-  }
-`;
 
 export default Landing;

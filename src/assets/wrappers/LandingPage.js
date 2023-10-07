@@ -20,11 +20,11 @@ const Wrapper = styled.section`
     span {
       color: var(--primary-500);
     }
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
   }
   p {
-    line-height: 2;
     color: var(--text-secondary-color);
+    line-height: 2;
     margin-bottom: 1.5rem;
     max-width: 35em;
   }
@@ -35,7 +35,7 @@ const Wrapper = styled.section`
     display: none;
   }
   .btn {
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 1.5rem;
   }
   @media (min-width: 992px) {
     .page {
