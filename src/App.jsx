@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import {
-  Dashboard,
+  DashboardPage,
   Error,
   HomeLayout,
   Landing,
@@ -29,7 +29,7 @@ function App() {
         },
         {
           path: 'dashboard',
-          element: <Dashboard />,
+          element: <DashboardPage />,
         },
       ],
     },
